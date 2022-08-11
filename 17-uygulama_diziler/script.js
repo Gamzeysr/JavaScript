@@ -13,11 +13,16 @@ console.log(meyveler[meyveler.length - 1]);   // Çilek
 // 4- Elma dizinin bir elemanımıdır?
 console.log(meyveler.includes("Elma"));
 console.log(meyveler.indexOf("Elma"));
+// en sonki ifadede sonuc pozitif rakam getiriyorsa içinde oldugunu bu şekildede anlarız
+
 
 // 5- Kiraz meyvesini listenin sonuna ekleyiniz.
 
 // meyveler[meyveler.length] = "Kiraz";
+// meyveler[meyveler.length] = "Kiraz";
+// lenght dinamik oldugundan ilk lenght 4 üncü index e ekler ikini lenght de 5 inci index e ekler kirazı yani listenin sonunda iki tane kiraz olmuş olur.
 meyveler.push("Kiraz");
+// push komutu direk sona ekler
 
 // 6- Dizinin son 2 elemanını siliniz.
 
@@ -25,6 +30,7 @@ meyveler.push("Kiraz");
 // meyveler.pop();
 
 // meyveler.splice(meyveler.length - 2, 2);
+// buradada sondan iki tane eleman sil demiş olduk
 
 // 7- Aşağıdaki bilgileri dizi içerisinde saklayınız ve her öğrencinin yaşını ve not ortalamasını hesaplayınız.
     /*
