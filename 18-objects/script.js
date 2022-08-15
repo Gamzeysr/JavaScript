@@ -35,7 +35,7 @@ let kullanicilar = [
     kullaniciB
 ];
 sonuc = kullanicilar[1].ad;
-
+// 
 let urunler = [
     {
         "urun_adi": "samsung s22",
@@ -47,6 +47,6 @@ let urunler = [
     }
 ]
 
-sonuc = urunler[0].urun_adi;
-
+sonuc = urunler[1].urun_fiyat;
+// 
 console.log(sonuc);
