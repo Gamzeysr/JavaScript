@@ -1,14 +1,14 @@
-// 1- Kendisine gönderilen kelimeyi belirtilen kez ekranda yazan fonksiyonu yapınız.
+//! 1- Kendisine gönderilen kelimeyi belirtilen kez ekranda yazan fonksiyonu yapınız.
 
 function kelimeYazdir(kelime, adet) {
-    for (let i=0; i < adet; i++) {
+    for (let i = 0; i < adet; i++) {
         console.log(kelime);
     }
 }
 
 // kelimeYazdir("merhaba", 2);
 
-// 2- Dikdörtgenin alan ve çevresini hesaplayan fonksiyonu yazınız.
+//! 2- Dikdörtgenin alan ve çevresini hesaplayan fonksiyonu yazınız.
 
 function alanCevreHesapla(kisa, uzun) {
     let alan = kisa * uzun;
@@ -17,23 +17,23 @@ function alanCevreHesapla(kisa, uzun) {
     return `alan: ${alan} çevre: ${cevre}`;
 }
 
-let sonuc = alanCevreHesapla(7, 10);
-sonuc = alanCevreHesapla(7, 12);
+// let sonuc = alanCevreHesapla(7, 10);
+// sonuc = alanCevreHesapla(7, 12);
 // console.log(sonuc);
 
 // 3- Yazı tura uygulamasını fonksiyon kullanarak yapınız.
 
 function yaziTuraAt() {
     let random = Math.random(); // 0-1
-
-    if(random < 0.5) {
+    // 
+    if (random < 0.5) {
         console.log("yazı");
     } else {
         console.log("tura");
     }
     console.log(random);
 }
-
+// 
 // yaziTuraAt();
 
 // 4- Kendisine gönderilen bir sayının tam bölenlerini dizi şeklinde döndüren fonksiyonu yazınız.
@@ -41,8 +41,8 @@ function yaziTuraAt() {
 function tamBolenler(sayi) {
     let sayilar = [];
 
-    for(let i=2; i < sayi; i++) {
-        if(sayi % i == 0) {
+    for (let i = 2; i < sayi; i++) {
+        if (sayi % i == 0) {
             sayilar.push(i);
         }
     }
@@ -60,13 +60,15 @@ function tamBolenler(sayi) {
 function toplam() {
     let sonuc = 0;
 
-    for(let i = 0; i < arguments.length; i++) {
+    for (let i = 0; i < arguments.length; i++) {
         sonuc += arguments[i];
     }
 
     return sonuc;
 }
 
-console.log(toplam(2, 5));
-console.log(toplam(2, 5, 7));   
-console.log(toplam(2, 5, 7, 10));   
+//! Her seferinde yeni bir parametre ekleyerek değerlere erişmektense, arguments nesnesini kullanarak fonksiyona gönderilen tüm değerlere erişebiliriz.
+// console.log(toplam(2, 5));
+// console.log(toplam(2, 5, 7));
+// console.log(toplam(2, 5, 7, 10));
+// 
