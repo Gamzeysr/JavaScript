@@ -7,19 +7,19 @@ function yazdir() {
     // console.log("function scope: ", isim, yas);
     console.log(isim, yas);
 }
-yazdir();
-console.log(isim);
+// yazdir();
+// console.log(isim);
 
 
 if (true) {
     let cinsiyet = "Kadın";
     let isim = "Zeynep";
-    // console.log(isim, cinsiyet);
+    console.log(isim, cinsiyet);
 }
 
-// console.log(isim);
+console.log(isim);
 
-// yazdir();
+yazdir();
 
 //! fonksiyonlar kendi scope alanlarını oluşturur.
 //! block içerisinde yeni bir scope oluşmaz. (let,const)
